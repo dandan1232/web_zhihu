@@ -583,8 +583,7 @@ a {
     left: 20px;
     top: -18px;
     font-size: 14px;
-    font-weight: bold;
-    color: black;
+    color: #969696;
 }
 
 .blue {
@@ -597,7 +596,8 @@ a {
     left: 52px;
     top: -18px;
     font-size: 14px;
-    color: #969696;
+    font-weight: bold;
+    color: black;
 }
 
 .explore:hover {
