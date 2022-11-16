@@ -931,3 +931,15 @@ span {
     border: none;
     color: rgb(133, 144, 166);
 }
+
+.el-dropdown {
+    vertical-align: top;
+}
+
+.el-dropdown+.el-dropdown {
+    margin-left: 15px;
+}
+
+.el-icon-arrow-down {
+    font-size: 12px;
+}

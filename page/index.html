@@ -23,7 +23,7 @@
       <a href="../page/index.html" class="index">首页</a>
       <img src="../img/blue.jpg" class="blue" width="28px" />
       <a href="../page/explore.html" class="explore">发现</a>
-      <a href="#" class="question">等你来答</a>
+      <a href="../page/find.html" class="question">等你来答</a>
     </div>
 
     <div id="search">
@@ -90,6 +90,13 @@
         a.style.width = w + "px"
       }
     }
+    export default {
+      methods: {
+        handleClick () {
+          alert('button click')
+        }
+      }
+    }
 
   </script>
 
@@ -139,6 +146,7 @@
         <input type="button" value="时尚" id="fashion" />
         <input type="button" value="影视" id="movie" />
         <input type="button" value="  展开         " id="more" />
+
         <input type="image" src="../img/展 开.png" id="moreimg" width="10px" />
       </div>
       <hr class="two" />
