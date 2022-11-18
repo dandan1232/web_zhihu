@@ -6,30 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>发现页面</title>
+    <link rel="icon" href="../img/网页标签logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="../css/find.css">
+    <link rel="stylesheet" href="../css/waitforu.css">
     <script src="../swiper/swiper-bundle.min.js"></script>
 </head>
 
+
+
+
 <body>
+
+    <header class="first">
+        <div id="right">
+            <a href="../page/index.html" class="logo">
+                <img src="../img/logo.jpg" height="50px" />
+            </a>
+            <a href="../page/index.html" class="index">首页</a>
+            <a href="../page/explore.html" class="explore">发现</a>
+            <a href="../page/waitforu.html" class="question">等你来答</a>
+            <img src="../img/blue.jpg" class="blue" width="30px" />
+        </div>
+
+        <div id="search">
+            <form method="post">
+                <input type="text" placeholder="   甜文小说推荐" class="textfield" onclick="changeImg(),shrink()"
+                    onblur="clearChange(),reduction()" />
+
+                <input type="image" src="../img/搜索.png" id="imagebotton" width="18px" />
+            </form>
+        </div>
+
+        <div id="submitbotton">
+            <form method="post">
+                <input type="submit" value="提问" class="submit" />
+            </form>
+        </div>
+
+        <div id="left">
+            <!-- <button type=""> -->
+            <a href="#" class="ring">
+                <img src="../img/铃.jpg" width="40px" />
+                <div id="messageword">消息</div>
+            </a>
+            <!-- </button> -->
+            <!-- <button type=""> -->
+            <a href="#" class="message">
+                <img src="../img/消息.jpg" width="40px" />
+                <div id="letterword">私信</div>
+            </a>
+            <!-- </button> -->
+            <a href="#" class="head">
+                <img src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/avatar/1.png" width="30px"
+                    class="headpicture" />
+            </a>
+        </div>
+    </header>
+
+
+
+
+    <!-- 轮播图 -->
     <div id="carousel">
         <div class="swiper swiper-3d">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="../img/james.png" />
-                    <p>北京冬奥会迎来倒计时一个月</p>
+                <div class="swiper-slide"><img
+                        src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/pic3.png" />
+                    <p>感觉考研考不上了怎么办？</p>
                 </div>
-                <div class="swiper-slide"><img src="../img/james.png" />
-                    <p>北京冬奥会迎来倒计时一个月</p>
+                <div class="swiper-slide"><img
+                        src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/pic1.png" />
+                    <p>大学生考研，是买ipad还是ipadair比较好？</p>
                 </div>
-                <div class="swiper-slide"><img src="../img/james.png" />
-                    <p>北京冬奥会迎来倒计时一个月</p>
+                <div class="swiper-slide">
+                    <img src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/english1.png" />
+                    <p>下半年大学英语四六级考试前应做好哪些准备？</p>
                 </div>
-                <div class="swiper-slide"><img src="../img/james.png" />
-                    <p>北京冬奥会迎来倒计时一个月</p>
+                <div class="swiper-slide"><img
+                        src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/pic5.png" />
+                    <p>英语不好 对考研影响大吗？</p>
                 </div>
-                <div class="swiper-slide"><img src="../img/james.png" />
-                    <p>北京冬奥会迎来倒计时一个月</p>
+                <div class="swiper-slide"><img
+                        src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/English2.png" />
+                    <p>一个普通大三学生怎样在一个月内复习通过六级?</p>
                 </div>
             </div>
         </div>
@@ -38,6 +98,136 @@
         <div class="swiper-button-next"></div>
     </div>
 
+    <!-- //为你推荐按钮 -->
+    <div id="second">
+        <div class="labeldiv">
+            <a href="#" class="recommend">
+                <!-- <img src="../img/waitforu/星星.png" alt="为你推荐" style="height:20px;"> -->
+                <input type="button" value="为你推荐" id="recommend" />
+            </a>
+            <a href="#">
+                <input type="button" value="邀请回答" id="answer" />
+            </a>
+            <a href="#">
+                <input type="button" value="最新问题" id="new-question" />
+            </a>
+            <a href="#">
+                <input type="button" value="人气问题" id="hot-question" />
+            </a>
+
+        </div>
+        <!-- <hr> -->
+        <div class="flex_main">
+            <div class="flex_left">
+                <img id="pic1"
+                    src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/zhihu/v2-abed1a8c04700ba7d72b45195223e0ff_l.jpg">
+                <a class="user">匿名用户 的提问</a>
+                <a class="day">16天前&nbsp;&nbsp;&nbsp;期待你的回答</a>
+                <br>
+                <br>
+                <a class="text" href="https://www.zhihu.com/question/564208745">大一有什么赚生活费的方法？</a>
+                <p class="text1">试试帮他解答~ · 5 回答 · 5 关注</p>
+            </div>
+            <div class="flex_right">
+                <div class="answer">
+                    <img src="../img/waitforu/笔 (1).png" width="15px" style="margin-left:10px;margin-top: 5px">
+                    <a style="margin-left:10px;margin-top: 10px;margin-bottom:10px;font-size: 15px;color: #ffffff;"
+                        href="#">写回答</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="flex_main">
+            <div class="flex_left">
+                <img id="pic1"
+                    src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/zhihu/v2-14037c783ab58e7d37762b8f96a5dcd5_l.jpg">
+                <a class="user">贝塔 的提问</a>
+                <a class="day">1个月前&nbsp;&nbsp;&nbsp;期待你的回答</a>
+                <br>
+                <br>
+                <a class="text" href="https://www.zhihu.com/question/564208745">大一有什么赚生活费的方法？</a>
+                <p class="text1">试试帮他解答~ · 5 回答 · 5 关注</p>
+            </div>
+            <div class="flex_right">
+                <div class="answer">
+                    <img src="../img/waitforu/笔 (1).png" width="15px" style="margin-left:10px;margin-top: 5px">
+                    <a style="margin-left:10px;margin-top: 10px;margin-bottom:10px;font-size: 15px;color: #ffffff;"
+                        href="#">写回答</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="flex_main">
+            <div class="flex_left">
+                <img id="pic1"
+                    src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/zhihu/v2-8a7bad30e17a1e82db33bf3d732ac6b0_l.jpg">
+                <a class="user">匿名用户 的提问</a>
+                <a class="day">16天前&nbsp;&nbsp;&nbsp;期待你的回答</a>
+                <br>
+                <br>
+                <a class="text" href="https://www.zhihu.com/question/558552934">考研有必要报机构的考研班吗？</a>
+                <p class="text1">试试帮他解答~ · 18 回答 · 21 关注</p>
+            </div>
+            <div class="flex_right">
+                <div class="answer">
+                    <img src="../img/waitforu/笔 (1).png" width="15px" style="margin-left:10px;margin-top: 5px">
+                    <a style="margin-left:10px;margin-top: 10px;margin-bottom:10px;font-size: 15px;color: #ffffff;"
+                        href="#">写回答</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="flex_main">
+            <div class="flex_left">
+                <img id="pic1"
+                    src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/zhihu/v2-1ae8176c2de8d6c27b80f30e1cd3832e_l.jpg">
+                <a class="user">落落要加油 的提问</a>
+                <a class="day">16天前&nbsp;&nbsp;&nbsp;期待你的回答</a>
+                <br>
+                <br>
+                <a class="text" href="https://www.zhihu.com/question/556070282">二级计算机怎么考?</a>
+                <p class="text1">试试帮他解答~ · 5 回答 · 6 关注</p>
+            </div>
+            <div class="flex_right">
+                <div class="answer">
+                    <img src="../img/waitforu/笔 (1).png" width="15px" style="margin-left:10px;margin-top: 5px">
+                    <a style="margin-left:10px;margin-top: 10px;margin-bottom:10px;font-size: 15px;color: #ffffff;"
+                        href="#">写回答</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="flex_main">
+            <div class="flex_left">
+                <img id="pic1"
+                    src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/Html_Scs/zhihu/v2-d24ed870663f60e7a6b4a38a7e3ed4df_l.jpg">
+                <a class="user">匿名用户 的提问</a>
+                <a class="day">16天前&nbsp;&nbsp;&nbsp;期待你的回答</a>
+                <br>
+                <br>
+                <a class="text" href="https://www.zhihu.com/question/558169327">亲爱的陌生人我是一名大学生 想要考四级 但英语非常不好 高考只考了47
+                    请问有什么好的学习方法吗 ?</a>
+                <p class="text1">试试帮他解答~ · 5 回答 · 5 关注</p>
+            </div>
+            <div class="flex_right">
+                <div class="answer">
+                    <img src="../img/waitforu/笔 (1).png" width="15px" style="margin-left:10px;margin-top: 5px">
+                    <a style="margin-left:10px;margin-top: 10px;margin-bottom:10px;font-size: 15px;color: #ffffff;"
+                        href="#">写回答</a>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+
+
+
+    </div>
+    </div>
     <script>
         slideW = 300//一张图300px, 每面四张角度22.5（PI/8），中心角度PI/16	             
         radius = slideW * 0.5 / Math.sin(Math.PI / 16)//半径。圆心并不是视点中心，视点在1200px
@@ -80,6 +270,7 @@
             }
 
         })
+
     </script>
 </body>
 
