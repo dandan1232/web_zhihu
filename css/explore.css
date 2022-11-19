@@ -283,31 +283,58 @@ body .title1 .li1 {
 }
 
 /*页码*/
-.left .page {
-    width: 400px;
-    margin-left: 250px;
-    font-size: 13px;
-    margin-top: 30px;
-    color: #3D3D3D;
+/*设置div样式的整体布局*/
+.page-icon {
+    margin: 20px 0 0 0;
+    /*设置距离顶部20像素*/
+    font-size: 0;
+    /*修复行内元素之间空隙间隔*/
+    text-align: center;
+    /*设置内容居中显示*/
 }
 
-.left .page .q1 {
-    color: #8F8F8F;
+/*设置共有的的样式布局，主要是进行代码优化，提高运行效率*/
+.page-icon a, .page-disabled, .page-next {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px 10px 5px;
+    font-size: 14PX;
+    /*修复行内元素之间空隙间隔*/
+    margin-right: 10px;
 }
 
-.left .page .q2 {
+
+.page-current {
+    color: #ff6600;
+    padding: 4px 10px 5px;
+    font-size: 14PX;
+    /*修复行内元素之间空隙间隔*/
+}
+
+.page-disabled {
+    color: #ccc;
+}
+
+.page-next i, .page-disabled i {
+    cursor: pointer;
+    /*设置鼠标经过时的显示状态，这里设置的是显示状态为小手状态*/
     display: inline-block;
-    border: 1px solid #C6C6C6;
-    padding: 5px;
+    /*设置显示的方式为行内块元素*/
+    width: 5px;
+    height: 9px;
+
 }
 
-.left .page .qq {
-    background-color: red;
+/* 
+.page-disabled i {
+    background-position: -80px -608px;
+    margin-right: 3px;
 }
 
-.left .page .q2:hover {
-    background-color: #D22000;
-}
+.page-next i {
+    background-position: -62px -608px;
+    margin-left: 3px;
+} */
 
 /*右栏*/
 .right {
@@ -327,6 +354,7 @@ body .title1 .li1 {
 .expert_recommend .content .left_expert, .right_expert {
     display: inline-block;
     width: 240px;
+
 }
 
 .expert_recommend .content ul {

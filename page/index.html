@@ -125,10 +125,10 @@
     </header>
   </div>
 
-  <script>
 
-  </script>
 
+
+  <!-- 主体 -->
   <div class="main">
     <div class="content">
       <a href="#" id="recommand2">推荐</a>
@@ -377,6 +377,25 @@
     </div>
 
     <div class="right">
+
+      <!-- 视频特效 -->
+      <div style="position: relative;width: 135px;float: right;margin-left: 20px;margin-top: 10px;">
+        <button onclick="playPause()">播放/暂停</button>
+        <button onclick="makeBig()">大</button>
+        <button onclick="makeNormal()">中</button>
+        <button onclick="makeSmall()">小</button>
+        <br />
+        <video id="video1" controls="controls">
+          <source src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/movie/20221119143114.mp4" type="video/mp4" />
+          <!-- 视频 必须是自己的 视频名称  视频路径-->
+          <source src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/movie/20221119143114.mp4" type="video/ogg" />
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+
+
+      <!-- 右侧导航栏 -->
+
       <div class="card1">
         <div id="shang">
           <a href="#" id="shangitem">
@@ -548,6 +567,13 @@
           儿童色情信息举报专区 </a><br /><a class="Footer-item" target="_blank" href="/certificates">
           证照中心 </a><br /><a class="Footer-item" target="_blank" href="/contact">
           联系我们</a><span class="Footer-item">© 2020 知乎</span>
+
+        <div>
+          <audio autoplay="autoplay" controls="controls" loop="loop" preload="auto" style="margin-top:20px;"
+            src="http://pic-ldd-test.oss-cn-hangzhou.aliyuncs.com/movie/%E8%B5%B5%E8%8B%B1%E4%BF%8A%20-%20%E9%80%81%E4%BD%A0%E4%B8%80%E6%9C%B5%E5%B0%8F%E7%BA%A2%E8%8A%B1.flac">
+            你的浏览器版本太低，不支持audio标签
+          </audio>
+        </div>
       </footer>
 
       <script>
@@ -576,8 +602,33 @@
 
         }
 
+
         window.onload = function () {
           elementFixed("card4", "65px", "", "405px", "")
+        }
+
+        // 视频
+        var myVideo = document.getElementById("video1")
+
+        function playPause () {
+          if (myVideo.paused)
+            myVideo.play()
+          else
+            myVideo.pause()
+        }
+
+        function makeBig () {
+          myVideo.style.width = 260
+          // myVideo.style.height = 300
+          // myVideo.height = 400
+        }
+
+        function makeSmall () {
+          myVideo.width = '120px'
+        }
+
+        function makeNormal () {
+          myVideo.width = 200
         }
 
           // 小人

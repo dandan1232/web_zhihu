@@ -47,10 +47,19 @@ header {
 
 .content {
     display: flex;
+    /* margin-top: -5px; */
     flex-direction: column;
     height: 1800px;
     flex: 1 1 auto;
     background-color: #ffffff;
+}
+
+
+#video1 {
+    width: 240px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 5 px;
 }
 
 .right {
