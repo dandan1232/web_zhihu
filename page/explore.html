@@ -7,17 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/explore.css" />
+    <!-- <link rel="stylesheet" href="../css/time.css" media="screen" type="text/css" /> -->
     <link rel="icon" href="../img/网页标签logo.png" type="image/x-icon">
 
 
-    <!-- <link rel="stylesheet" href="https://g.alicdn.com/thx/cube/1.3.2/cube.min.css">
-    <link rel="stylesheet" href="../demo.css">
-    <link rel="stylesheet" href="../iconfont.css">
-    <script src="../js/iconfont.js"></script> -->
-    <!-- jQuery -->
-    <!-- <script src="https://a1.alicdn.com/oss/uploads/2018/12/26/7bfddb60-08e8-11e9-9b04-53e73bb6408b.js"></script> -->
-    <!-- 代码高亮 -->
-    <!-- <script src="https://a1.alicdn.com/oss/uploads/2018/12/26/a3f714d0-08e6-11e9-8a15-ebf944d7534c.js"></script> -->
 </head>
 
 <body>
@@ -434,8 +427,33 @@
                 startSakura()
             }
         }
+        function time () {
+            var date = new Date()
+            var hour = date.getHours()
+            var minutes = date.getMinutes()
+            var seconds = date.getSeconds()
+            var str = "现在的时间" + hour + "时" + minutes + "分" + seconds + "秒"
+            var div1 = document.getElementById("div1")
+            div1.innerHTML = str
+        }
+        setInterval(time, 1000);
+
     </script>
+
+    <!-- //时钟 -->
+    <!-- <div>
+
+        <div style="text-align:center;clear:both;">
+            <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+            <script src="../js/time.js" type="text/javascript"></script>
+        </div>
+
+        <iframe frameborder="0" src="../page/test/时钟/index2.html" width="100%" height="500px" scrolling="no"></iframe>
+
+    </div> -->
     <div class="right">
+        <!-- 时间 -->
+        <div id="div1"></div>
         <div class="essay_recommend">
             <a href="#" class="hotessay">热文推荐</a><span class="hint">(鼠标滑过查看)</span>
             <ul>
@@ -672,111 +690,7 @@
             <br>
             <hr>
             <br>
-            <!-- <div class="essay_recommend">
-                <a href="#" class="hotessay">热文推荐</a><span class="hint">(鼠标滑过查看)</span>
-                <ul>
-                    <li class="day_title"><a href="#">日榜</a>
-                        <ul class="day">
-                            <li>福利丨四月读书：10本免费机器学习与<..< /li>
-                            <li>开发发和产品之间的恩怨从何来?</li>
-                            <li>(已拿offer)2017腾讯暑期实习生从笔试...</li>
-                            <li>用Docker玩转深度学习</li>
-                            <li>科普丨机器学习演化史，方法、应用场</li>
-                            <li>2017腾讯实习生Android客户端开发发面</li>
-                            <li>“程序员强迫症”的日常</li>
-                            <li>ASP.NET&nbsp;Core&nbsp;MVC四种<..< /li>
-                            <li>如何在Kubernetes中部署一个高可用的P...</li>
-                            <li>30分钟掌握&nbsp;C#6</li>
-                        </ul>
-                    </li>
-                    <li class="week_title"><a href="#">周榜</a>
-                        <ul class="week">
-                            <li>开发发和产品之间的恩怨从何来?</li>
-                            <li>30分钟掌握&nbsp;C#6</li>
-                            <li>如何在Kubernetes中部署一个高可用的P</li>
-                            <li>ASP.NET&nbsp;Core&nbsp;MVC四种</li>
-                            <li>“程序员强迫症”的日常</li>
-                            <li>2017腾讯实习生Android客户端开发发面</li>
-                            <li>科普丨机器学习演化史，方法、应用场</li>
-                            <li>用Docker玩转深度学习</li>
-                            <li>福利丨四月读书：10本免费机器学</li>
-                            <li>如何在Kubernetes中部署一个高可用的P...</li>
-                        </ul>
-                    </li>
-                    <li class="month_title"><a href="#">月榜</a>
-                        <ul class="month">
-                            <li>如何在Kubernetes中部署一个高可用的P...</li>
-                            <li>开发发和产品之间的恩怨从何来?</li>
-                            <li>30分钟掌握&nbsp;C#6</li>
-                            <li>福利丨四月读书：10本免费机器学</li>
-                            <li>用Docker玩转深度学习</li>
-                            <li>科普丨机器学习演化史，方法、应用场</li>
-                            <li>ASP.NET&nbsp;Core&nbsp;MVC四种</li>
-                            <li>“程序员强迫症”的日常</li>
-                            <li>我们这代人的焦虑</li>
-                            <li>当你手里拿的不是键盘……而是方向盘？</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div> -->
-            <!-- <div class="essay_category">
-                <a href="#" class="title">博文分类</a>
-                <ul>
-                    <li>
-                        <img src="category/移动开发.png">
-                        <a href="#">移动开发</a>&nbsp;&nbsp;
-                        <img src="category/web.png" class="img2">
-                        <a href="#">web前端</a>
-                    </li>
-                    <li>
-                        <img src="category/架构设计.png">
-                        <a href="#">架构设计</a>
-                        <img src="category/编程语言.png" class="img2">
-                        <a href="#">编程语言</a>
-                    </li>
-                    <li>
-                        <img src="category/web.png">
-                        <a href="#">互联网</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <img src="category/数据库.png" class="img2">
-                        <a href="#">数据库</a>
-                    </li>
-                    <li>
-                        <img src="category/系统运维.png">
-                        <a href="#">系统运维</a>
-                        <img src="category/云计算.png" class="img2">
-                        <a href="#">云计算</a>
-                    </li>
-                    <li>
-                        <img src="category/研发管理.png">
-                        <a href="#">研发管理理</a>
-                        <img src="category/综合.png" class="img2">
-                        <a href="#">综合</a>
-                    </li>
-                </ul>
-            </div> -->
-            <!-- <div class="new_export">
-                <span class="new"> 最新专</span>
-                <a href="#" class="apply_export">申请专家</a>
-                <ul>
-                    <li>
-                        <a href="#"><img src="export1.jpg"></a>
-                        <p>
-                            <a href="#">李大</a>毕业于武汉理工大学（硕士学历），目前在深圳小安时代负责系统的微服务架构设计< </p>
-                    </li>
-                    <li>
-                        <a href="#"><img src="export2.jpg"></a>
-                        <p>
-                            <a href="#">李二</a>从事Android开发发四年有余，对软件开发发有一定的兴趣，大坑小坑爬过无数，平时喜看...
-                        </p>
-                    </li>
-                    <li>
-                        <a href="#"><img src="export3.jpg"></a>
-                        <p>
-                            <a href="#">李三</a>本人现为北京理工大学光电学院博士生。当前主要研究方向为增强现实与人机交互，并对机器人和人工...
-                        </p>
-                    </li>
-                </ul>
-            </div> -->
+
             <div class="contact">
                 <span class="contact_title">联系我们</span>
                 <a href="#">尝试投稿</a><br>
