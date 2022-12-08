@@ -1,8 +1,9 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 3769270 */
+  font-family: "iconfont";
+  /* Project id 3769270 */
   src: url('iconfont.woff2?t=1668410118597') format('woff2'),
-       url('iconfont.woff?t=1668410118597') format('woff'),
-       url('iconfont.ttf?t=1668410118597') format('truetype');
+    url('iconfont.woff?t=1668410118597') format('woff'),
+    url('iconfont.ttf?t=1668410118597') format('truetype');
 }
 
 .iconfont {
@@ -16,6 +17,7 @@
 .icon-shu:before {
   content: "\e634";
 }
+
 
 .icon-chakanhuida:before {
   content: "\e60a";
@@ -88,4 +90,3 @@
 .icon-shoucang:before {
   content: "\e8c6";
 }
-

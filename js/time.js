@@ -34,6 +34,7 @@ function utilityClock(container) {
         position(element, n / 12, 105)
         dynamic.appendChild(element)
     }
+    
     var position = function(element, phase, r) {
         var theta = phase * 2 * Math.PI
         element.style.top = (-r * Math.cos(theta)).toFixed(1) + 'px'

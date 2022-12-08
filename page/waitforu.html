@@ -68,6 +68,8 @@
 
 
 
+
+
     <!-- 轮播图 -->
     <div id="carousel">
         <div class="swiper swiper-3d">
@@ -250,7 +252,7 @@
             loop: true,
             loopedSlides: 4,
             grabCursor: true,
-            //	autoplay: true,
+            autoplay: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -320,6 +322,7 @@
 
                     addParticle(cursor.x, cursor.y, possibleColors[Math.floor(Math.random() * possibleColors.length)])
                 }
+
 
                 function addParticle (x, y, color) {
                     var particle = new Particle()
